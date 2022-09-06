@@ -17,9 +17,6 @@ namespace _31._08._2022
         public double maksuvaba;
         public double tulumaks;
 
-        public Isik()
-        { }
-
         public Isik(string nimi, int synniaasta, Sugu isikSugu,double maksuvaba,double palk)
         {
             this.nimi = nimi;
@@ -30,6 +27,7 @@ namespace _31._08._2022
         }
 
         public abstract void print_Info();
+        public abstract int arvutaVanus();
         public abstract double arvutaSissetulek(double palk, double tulumaks,double maksuvaba);
         public void muuda_Nimi(string uusNimi) {    nimi = uusNimi; }
     }

@@ -23,7 +23,7 @@ namespace _31._08._2022
             double netopalk = ((palk - maksuvaba) * (1 - (tulumaks / 100))) + maksuvaba;
             return netopalk;
         }
-        public int arvutaVanus()
+        public override int arvutaVanus()
         {
             int praeguneAasta = DateTime.Now.Year;
             int vanus = praeguneAasta - synniaasta;
@@ -31,7 +31,7 @@ namespace _31._08._2022
         }
         public override void print_Info()
         {
-            Console.WriteLine($"Tema koolinimi on {koolinimi} ja ta õpib on {klass} eriala eest {spetsialiseerumine} ja tema tootasu on {arvutaSissetulek(palk, maksuvaba, tulumaks)}, tema nimi on {nimi} {isikSugu} ja {arvutaVanus()}");
+            Console.WriteLine($"Tema koolinimi on {koolinimi} ja ta õpib on {klass} eriala eest {spetsialiseerumine} ja tema tootasu on {arvutaSissetulek(palk, maksuvaba, tulumaks)}, tema nimi on {nimi} {isikSugu} ja {arvutaVanus()} aastat");
         }
     }
 }
