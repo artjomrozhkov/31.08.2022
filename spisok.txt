@@ -1,0 +1,3 @@
+Timofey, 17, isane;
+Artjom, 17, isane;
+Ludmila, 24, emane;

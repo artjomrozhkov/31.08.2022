@@ -30,7 +30,7 @@ namespace _31._08._2022
 
         public override void print_Info()
         {
-            Console.WriteLine($"Tema asutus koht on {asutus}, tema amet on {amet} ja tema tootasu on {arvutaSissetulek(palk,maksuvaba,tulumaks)}, tema nimi on {nimi} {isikSugu} ja {arvutaVanus()} aastat");
+            Console.WriteLine($"Asutus: {asutus}, tema amet on {amet} ja tema tootasu on {arvutaSissetulek(palk,maksuvaba,tulumaks)}, tema nimi on {nimi} {isikSugu} ja {arvutaVanus()} aastat");
         }
     }
 }
